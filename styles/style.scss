@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+    background: none;
+    list-style: none;
+}
+
+.wrapper {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 50px;
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 50px;
+        .logo {
+            height: 100px;
+            width: 100px;
+            background-color: #d0e2f4;
+            transition: all 3s;
+            .block {
+                height: 100px;
+                width: 100px;
+                background-color: #d0e2f4;
+                line-height: 100px;
+                text-align: center;
+                font-size: 26px;
+                transition: all 3s;
+            }
+        }
+        .primary-title {
+            font-size: 46px;
+            transition: all 3s;
+            transform: scale(0);
+        }
+    }
+    .main {
+        display: flex;
+        border: 1px solid black;
+        margin-top: 30px;
+        position: relative;
+        .menu-section {
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            background-color: #d0e2f4;
+            padding-bottom: 10px;
+            .btn-wrap {
+                padding-bottom: 40px;
+                .btn {
+                    width: 100%;
+                    display: block;
+                    padding: 10px;
+                    border: 1px solid #d0e2f4;
+                    border-right: 1px solid black;
+                    border-bottom: 1px solid black;
+                    border-collapse: collapse;
+                    font-size: 26px;
+                    text-align: start;
+                    transition: all .3s;
+                    &:hover {
+                        cursor: pointer;
+                        background-color: #d9d2e9;
+                    }
+                    &:active {
+                        border: 1px solid black;
+                        transform: scale(.8);
+                    }
+                }
+                .active-btn {
+                    background-color: #d9d2e9;
+                    border-right: #d9d2e9;
+                }
+            }
+            .year {
+                text-align: center;
+            }
+        }
+        .content-section {
+            width: 70%;
+            background-color: #d9d2e9;
+            .content {
+                display: none;
+                padding: 10px 20px;
+                font-size: 18px;
+                background-color: #d9d2e9;
+                transition: all .3s;
+                .content__img {
+                    width: 100%;
+                    display: block;
+                    margin: 0 auto;
+                    padding-bottom: 20px;
+                }
+                .content__text {
+                    text-indent: 15px;
+                }
+                .content__item {
+                    display: block;
+                    padding: 10px 0;
+                    font-size: 20px;    
+                    font-weight: 700;
+                }
+                .content__list-wrapp {
+                    display: block;
+                    .content__list {
+                        display: block;
+                        padding-bottom: 10px;
+                        text-indent: 5px;
+
+                    }
+                }
+            }
+            .active-content {
+                display: block;
+            }
+        }
+        .square {
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: -25px;
+            right: -25px;
+            border: 1px solid black;
+            background-color: #d0e2f4;
+            transition: all 2s;
+            .square__box {
+                width: 35px;
+                height: 35px;
+                border: 1px solid black;
+                background-color: #d9d2e9;
+            }
+        }
+    }
+}
