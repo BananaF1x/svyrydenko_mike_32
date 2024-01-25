@@ -11,17 +11,18 @@
 .wrapper {
   max-width: 1024px;
   margin: 0 auto;
-  padding: 50px;
+  padding: 50px 5%;
 }
 .wrapper .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 50px;
+  padding: 25px 2.5%;
 }
 .wrapper .header .logo {
   height: 100px;
   width: 100px;
+  margin-right: 3%;
   background-color: #d0e2f4;
   transition: all 3s;
 }
@@ -53,13 +54,10 @@
   background-color: #d0e2f4;
   padding-bottom: 10px;
 }
-.wrapper .main .menu-section .btn-wrap {
-  padding-bottom: 40px;
-}
 .wrapper .main .menu-section .btn-wrap .btn {
   width: 100%;
   display: block;
-  padding: 10px;
+  padding: 10px 2%;
   border: 1px solid #d0e2f4;
   border-right: 1px solid black;
   border-bottom: 1px solid black;
@@ -89,7 +87,7 @@
 }
 .wrapper .main .content-section .content {
   display: none;
-  padding: 10px 20px;
+  padding: 10px 3%;
   font-size: 18px;
   background-color: #d9d2e9;
   transition: all 0.3s;
@@ -138,4 +136,67 @@
   height: 35px;
   border: 1px solid black;
   background-color: #d9d2e9;
+}
+
+@media screen and (max-width: 570px) {
+  .wrapper {
+    min-width: 350px;
+  }
+  .wrapper .header {
+    padding: 15px 6%;
+  }
+  .wrapper .header .logo {
+    height: 75px;
+    width: 75px;
+  }
+  .wrapper .header .logo .block {
+    height: 75px;
+    width: 75px;
+    line-height: 75px;
+    font-size: 20px;
+  }
+  .wrapper .header .primary-title {
+    text-align: center;
+    font-size: 30px;
+  }
+  .wrapper .main {
+    margin-top: 20px;
+  }
+  .wrapper .main .menu-section .btn-wrap .btn {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 12px;
+    font-weight: 600;
+  }
+  .wrapper .main .menu-section .year {
+    font-size: 14px;
+  }
+  .wrapper .main .content-section .content {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 14px;
+  }
+  .wrapper .main .content-section .content .content__img {
+    padding-bottom: 10px;
+  }
+  .wrapper .main .content-section .content .content__text {
+    text-indent: 10px;
+  }
+  .wrapper .main .content-section .content .content__item {
+    padding: 5px 0;
+    font-size: 16px;
+  }
+  .wrapper .main .content-section .content .content__list-wrapp .content__list {
+    padding-bottom: 5px;
+  }
+  .wrapper .main .square {
+    width: 30px;
+    height: 30px;
+    top: -15px;
+    right: -15px;
+  }
+  .wrapper .main .square .square__box {
+    width: 20px;
+    height: 20px;
+  }
 }/*# sourceMappingURL=style.css.map */

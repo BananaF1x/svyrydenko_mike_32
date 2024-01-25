@@ -11,15 +11,16 @@
 .wrapper {
     max-width: 1024px;
     margin: 0 auto;
-    padding: 50px;
+    padding: 50px 5%;
     .header {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 20px 50px;
+        padding: 25px 2.5%;
         .logo {
             height: 100px;
             width: 100px;
+            margin-right: 3%;
             background-color: #d0e2f4;
             transition: all 3s;
             .block {
@@ -51,11 +52,10 @@
             background-color: #d0e2f4;
             padding-bottom: 10px;
             .btn-wrap {
-                padding-bottom: 40px;
                 .btn {
                     width: 100%;
                     display: block;
-                    padding: 10px;
+                    padding: 10px 2%;
                     border: 1px solid #d0e2f4;
                     border-right: 1px solid black;
                     border-bottom: 1px solid black;
@@ -86,7 +86,7 @@
             background-color: #d9d2e9;
             .content {
                 display: none;
-                padding: 10px 20px;
+                padding: 10px 3%;
                 font-size: 18px;
                 background-color: #d9d2e9;
                 transition: all .3s;
@@ -136,6 +136,78 @@
                 height: 35px;
                 border: 1px solid black;
                 background-color: #d9d2e9;
+            }
+        }
+    }
+}
+
+// media screen  max-570px
+@media screen and (max-width: 570px) {
+    .wrapper {
+        min-width: 350px;
+        .header {
+            padding: 15px 6%;
+            .logo {
+                height: 75px;
+                width: 75px;
+                .block {
+                    height: 75px;
+                    width: 75px;
+                    line-height: 75px;
+                    font-size: 20px;
+                }
+            }
+            .primary-title {
+                text-align: center;
+                font-size: 30px;
+            }
+        }
+        .main {
+            margin-top: 20px;
+            .menu-section {
+                .btn-wrap {
+                    .btn {
+                        padding-top: 5px;
+                        padding-bottom: 5px;
+                        font-size: 12px;
+                        font-weight: 600;
+                    }
+                }
+                .year {
+                    font-size: 14px;
+                }
+            }
+            .content-section {
+                .content {
+                    padding-top: 5px;
+                    padding-bottom: 5px;
+                    font-size: 14px;
+                    .content__img {
+                        padding-bottom: 10px;
+                    }
+                    .content__text {
+                        text-indent: 10px;
+                    }
+                    .content__item {
+                        padding: 5px 0;
+                        font-size: 16px;    
+                    }
+                    .content__list-wrapp {
+                        .content__list {
+                            padding-bottom: 5px;    
+                        }
+                    }
+                }
+            }
+            .square {
+                width: 30px;
+                height: 30px;
+                top: -15px;
+                right: -15px;
+                .square__box {
+                    width: 20px;
+                    height: 20px;
+                }
             }
         }
     }
